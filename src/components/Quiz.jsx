@@ -29,7 +29,7 @@ const Quiz = () => {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/recommend", {
+      const res = await fetch("https://nxtup.onrender.com/api/recommend", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ answers }),
