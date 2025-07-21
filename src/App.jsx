@@ -1,29 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./components/Landing";
 import Quiz from "./components/Quiz";
+import Navbar from "./components/Navbar";
 
-const App = () => {
-  const [started, setStarted] = useState(false);
-  const [result, setResult] = useState(null);
 
-  const handleComplete = async (answers) => {
-    console.log("Answers:", answers);
-    // TODO: send answers to AI and setResult()
-  };
-
-  if (result) {
-    return <div className="text-white">Recommended movie: {result}</div>; // Placeholder
-  }
-
-  return (
-    <>
-      {started ? (
-        <Quiz onComplete={handleComplete} />
-      ) : (
-        <Landing onStart={() => setStarted(true)} />
-      )}
-    </>
-  );
-};
+const App = () => (
+  <Router>
+    <div className="relative min-h-screen bg-primaryBg text-textMain overflow-hidden">
+      <div className="relative z-10">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/quiz" element={<Quiz />} />
+        </Routes>
+      </div>
+    </div>
+  </Router>
+);
 
 export default App;

@@ -6,6 +6,15 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeInSlow: {
+          '0%': { opacity: 0, transform: 'translateY(12px)' },
+          '100%': { opacity: 1, transform: 'translateY(0)' },
+    },
+  },
+  animation: {
+    fadeInSlow: 'fadeInSlow 1.2s ease-out forwards',
+  },
       colors: {
         primaryBg: "#121212",
         surface: "#1E1E1E",
@@ -20,4 +29,3 @@ export default {
   },
   plugins: [],
 }
-
