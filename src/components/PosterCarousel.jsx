@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 
 const posters = [
-  "/poster1.png",
-  "/poster2.png",
-  "/poster3.png",
-  "/poster4.png",
-  "/poster5.png",
-  "/poster6.png",
-  "/poster7.png",
-  "/poster8.png",
-  "/poster9.png",
-  "/poster10.png",
-  "/poster11.png",
+  "/poster1.jpg",
+  "/poster2.jpg",
+  "/poster3.jpg",
+  "/poster4.jpg",
+  "/poster5.jpg",
+  "/poster6.jpg",
+  "/poster7.jpg",
+  "/poster8.jpg",
+  "/poster9.jpg",
+  "/poster10.jpg",
+  "/poster11.jpg",
+  "/poster12.jpg",
 ];
 
 const PosterCarousel = () => {
