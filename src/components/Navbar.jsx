@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => (
-  <nav className="fixed w-full bg-black text-white px-6 py-1 flex items-center justify-between shadow border-b border-gray-800 rounded-b-lg z-index">
+  <nav className="fixed w-full bg-black text-white px-6 flex items-center justify-between shadow border-b border-gray-800 rounded-b-lg z-index">
     {/* Left: Logo */}
     <div className="flex items-center space-x-6">
       <Link to="/">
